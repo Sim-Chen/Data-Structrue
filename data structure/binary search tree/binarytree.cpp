@@ -2,8 +2,8 @@
 
 
 Status lookup(Node* node,int target)
-{//
-	if(node==NULL)//¿ÕÊ÷
+{
+	if(node==NULL)//empty tree
 		return ERROR;
 	else
 	{
@@ -30,7 +30,7 @@ Node* NewNode(int data)
 }
 Node* insert(Node* node,int data)
 {
-	if(node==NULL)//¿ÕÊ÷
+	if(node==NULL)//empty tree
 		return(NewNode(data));
 	else
 	{
